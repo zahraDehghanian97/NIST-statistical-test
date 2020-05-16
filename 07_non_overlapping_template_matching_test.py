@@ -55,7 +55,7 @@ def test(input, n):
     m = len(B)
     
     N = 8  #number of block
-    M = n/N    #length of each block
+    M = int(n/N)    #length of each block
     
     blocks = list() # Split into N blocks of M bits
     for i in range(N):
