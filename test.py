@@ -1,23 +1,21 @@
 import csv
 from tkinter import *
+import monobit_test, frequency_within_block_test, runs_test, longest_run_ones_in_a_block_test, binary_matrix_rank_test
+import dft_test, non_overlapping_template_matching_test, overlapping_template_matching_test
+import maurers_universal_test, linear_complexity_test, serial_test, approximate_entropy_test
+import cumulative_sums_test, random_excursion_test, random_excursion_variant_test
 
+testFunc = [monobit_test, frequency_within_block_test, runs_test, longest_run_ones_in_a_block_test,
+            binary_matrix_rank_test
+    , dft_test, non_overlapping_template_matching_test, overlapping_template_matching_test
+    , maurers_universal_test, linear_complexity_test, serial_test, approximate_entropy_test
+    , cumulative_sums_test, random_excursion_test, random_excursion_variant_test]
 testlist = [
-    'monobit_test',
-    'frequency_within_block_test',
-    'runs_test',
-    'longest_run_ones_in_a_block_test',
+    'monobit_test', 'frequency_within_block_test', 'runs_test', 'longest_run_ones_in_a_block_test',
     'binary_matrix_rank_test',
-    'dft_test',
-    'non_overlapping_template_matching_test',
-    'overlapping_template_matching_test',
-    'maurers_universal_test',
-    'linear_complexity_test',
-    'serial_test',
-    'approximate_entropy_test',
-    'cumulative_sums_test',
-    'random_excursion_test',
-    'random_excursion_variant_test'
-]
+    'dft_test', 'non_overlapping_template_matching_test', 'overlapping_template_matching_test',
+    'maurers_universal_test', 'linear_complexity_test', 'serial_test', 'approximate_entropy_test',
+    'cumulative_sums_test', 'random_excursion_test', 'random_excursion_variant_test']
 
 
 def main():
@@ -70,17 +68,11 @@ def main():
     # for i in range(NUM_TEST):
     i = v.get()
     i -= 1
-    if (i > 0):
+    if (i >= 0):
 
         total_count = 0
         success_count = 0
         p_average = 0.0
-        # Get corresponding .py test file
-        if i < 9:
-            testFile = __import__("0" + str(i + 1) + "_" + testlist[i])
-        else:
-            testFile = __import__(str(i + 1) + "_" + testlist[i])
-
         fi = open(Input, "r+")  # input file
 
         '''
@@ -96,7 +88,7 @@ def main():
                     bits += line[:-1]
                 else:
                     total_count += 1
-                    x = testFile.test(bits, len(bits))
+                    x = testFunc[i].test(bits, len(bits))
 
                     p_average += x[len(x) - 2]
 
@@ -119,7 +111,7 @@ def main():
                     bits += line[:-1]
                 else:
                     total_count += 1
-                    x = testFile.test(bits, len(bits))
+                    x = testFunc[i].test(bits, len(bits))
 
                     p_average += x[len(x) - 2]
 
@@ -142,7 +134,7 @@ def main():
                     bits += line[:-1]
                 else:
                     total_count += 1
-                    x = testFile.test(bits, len(bits))
+                    x = testFunc[i].test(bits, len(bits))
 
                     p_average += x[len(x) - 2]
 
@@ -165,7 +157,7 @@ def main():
                     bits += line[:-1]
                 else:
                     total_count += 1
-                    x = testFile.test(bits, len(bits))
+                    x = testFunc[i].test(bits, len(bits))
 
                     p_average += x[len(x) - 2]
 
@@ -187,7 +179,7 @@ def main():
                     bits += line[:-1]
                 else:
                     total_count += 1
-                    x = testFile.test(bits, len(bits))
+                    x = testFunc[i].test(bits, len(bits))
 
                     p_average += x[len(x) - 2]
 
@@ -207,9 +199,9 @@ def main():
         else:
             for line in fi:
                 total_count += 1
-                if fieldnames[i] != None:
+                if fieldnames[i] is not None:
 
-                    x = testFile.test(line[:-1], len(line[:-1]))
+                    x = testFunc[i].test(line[:-1], len(line[:-1]))
 
                     p_average += x[len(x) - 2]
 
@@ -260,4 +252,3 @@ if __name__ == "__main__":
         Label(root, text=""" """).grid(row=4, column=0)
     Button(root, text='run', command=main, height=1, width=10).grid(row=10, columnspan=2, padx=10, column=2, sticky=E)
     root.mainloop()
-    # main()

@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd579480-d30f-4183-8f53-e19bd471683c" name="Default Changelist" comment="" />
+    <list default="true" id="dd579480-d30f-4183-8f53-e19bd471683c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_monobit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/monobit_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_frequency_within_block_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/frequency_within_block_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_runs_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/runs_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_longest_run_ones_in_a_block_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/longest_run_ones_in_a_block_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_binary_matrix_rank_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/binary_matrix_rank_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_dft_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/dft_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_non_overlapping_template_matching_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/non_overlapping_template_matching_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_overlapping_template_matching_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/overlapping_template_matching_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_maurers_universal_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/maurers_universal_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_linear_complexity_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_complexity_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_serial_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/serial_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_approximate_entropy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/approximate_entropy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_cumulative_sums_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cumulative_sums_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_random_excursion_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_excursion_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_random_excursion_variant_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_excursion_variant_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_01_monobit_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_01_monobit_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_02_frequency_within_block_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_02_frequency_within_block_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_03_runs_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_03_runs_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_04_longest_run_ones_in_a_block_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_04_longest_run_ones_in_a_block_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_05_binary_matrix_rank_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_05_binary_matrix_rank_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_15_random_excursion_variant_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_15_random_excursion_variant_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,24 +45,26 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="4" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="391" />
+          <entry key="dummy" value="4" />
+          <entry key="py" value="885" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="391" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="885" />
         </counts>
       </usages-collector>
     </session>
@@ -47,34 +74,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/result_02_frequency_within_block_test.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_monobit_test.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02_frequency_within_block_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1589801180756" expanded="true" signature="1246:1248" ph="..." />
               </folding>
             </state>
           </provider>
@@ -92,6 +96,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>input</find>
+      <find>output</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,6 +106,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/chert.py" />
+        <option value="$PROJECT_DIR$/10_linear_complexity_test.py" />
+        <option value="$PROJECT_DIR$/01_monobit_test.py" />
+        <option value="$PROJECT_DIR$/monobit_test.py" />
         <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
@@ -239,7 +247,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -247,7 +255,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,7 +279,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02_frequency_within_block_test.py">
+    <entry file="file://$PROJECT_DIR$/result/result_02_frequency_within_block_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frequency_within_block_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/longest_run_ones_in_a_block_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_matrix_rank_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -280,21 +310,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_monobit_test.py">
+    <entry file="file://$PROJECT_DIR$/dft_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non_overlapping_template_matching_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/overlapping_template_matching_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maurers_universal_test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_02_frequency_within_block_test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+    <entry file="file://$PROJECT_DIR$/random_excursion_variant_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_complexity_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monobit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1589801180756" expanded="true" signature="1246:1248" ph="..." />
           </folding>
         </state>
       </provider>
