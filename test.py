@@ -1,4 +1,5 @@
 import csv
+from tkinter import *
 
 testlist = [
     'monobit_test',
@@ -20,6 +21,7 @@ testlist = [
 
 
 def main():
+    global v
     Input = "input.txt"  # input file containing bit strings
 
     NUM_TEST = 15
@@ -66,8 +68,8 @@ def main():
     result = [None] * NUM_TEST
 
     # for i in range(NUM_TEST):
-    i = int(input("enter number test"))
-    i-=1
+    i = v.get()
+    i -= 1
     if (i > 0):
 
         total_count = 0
@@ -226,10 +228,36 @@ def main():
         writeDict = {fieldnames[i][len(fieldnames[i]) - 1]: float(success_count) / total_count,
                      fieldnames[i][len(fieldnames[i]) - 2]: p_average / total_count}
         writer[i].writerow(writeDict)
-        print("p_average = " + str(p_average / total_count))
-        print("passed percentage = " + str(float(success_count) / total_count))
-        print("Test " + str(i+1) + ": " + testlist[i] + " finished!")
+
+        root2 = Toplevel(asli)
+        root2.title(testlist[i])
+        p_a = "p_average = " + str(p_average / total_count)
+        p_p = "passed percentage = " + str(float(success_count) / total_count)
+        p_n = "Test " + str(i + 1) + ": " + testlist[i] + " finished!"
+        Label(root2, text=p_a).grid(row=0, column=0, columnspan=3)
+        Label(root2, text=p_p).grid(row=1, column=0, columnspan=3)
+        Label(root2, text=p_n).grid(row=2, column=0, columnspan=3)
+        Label(root2, text=""" """).grid(row=3, column=0)
+        root2.mainloop()
+        # print("p_average = " + str(p_average / total_count))
+        # print("passed percentage = " + str(float(success_count) / total_count))
+        # print("Test " + str(i + 1) + ": " + testlist[i] + " finished!")
 
 
 if __name__ == "__main__":
-    main()
+    asli = Tk()
+    root = Toplevel(asli)
+    root.title('NIST Statistical Test')
+    asli.geometry("5x5")
+    Label(root, text="""Enter test number :""").grid(row=0, column=0)
+    Label(root, text=""" """).grid(row=1, column=0)
+    v = IntVar()
+    v.set(1)
+    counter = 0
+    for t in testlist:
+        Radiobutton(root, text=t, variable=v, value=counter + 1).grid(row=2 + int(counter / 4), column=counter % 4)
+        counter += 1
+        Label(root, text=""" """).grid(row=4, column=0)
+    Button(root, text='run', command=main, height=1, width=10).grid(row=10, columnspan=2, padx=10, column=2, sticky=E)
+    root.mainloop()
+    # main()
